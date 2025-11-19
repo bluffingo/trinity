@@ -206,17 +206,9 @@ hr {
     }
 }
 
-dialog {
-    /* pale moon fix */
-    position: fixed;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-
-    &::backdrop {
-        background: black;
-        opacity: 0.6;
-    }
+::backdrop {
+    background: black;
+    opacity: 0.6;
 }
 
 .userlink-container {
@@ -303,3 +295,13 @@ ul.unstyled-list {
 @import 'setting_page';
 @import 'change_theme_page';
 @import 'admin_page';
+
+// goanna fixes
+.goanna {
+    dialog {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+}
