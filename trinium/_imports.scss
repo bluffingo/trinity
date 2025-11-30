@@ -197,13 +197,21 @@ hr {
 }
 
 .debug-dialog {
-    z-index: 50000;
     width: 800px;
 
     .tabcontent {
         @include scrollbar();
         height: 400px;
     }
+}
+
+.report-dialog {
+    width: 440px;
+}
+
+dialog {
+    z-index: 50000;
+    color: $text-color;
 }
 
 ::backdrop {

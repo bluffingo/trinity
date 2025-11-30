@@ -9,7 +9,7 @@ $header-link-color: black;
 @if $color-scheme =="dark" {
     $text-color: white;
     $link-color: #2d89e8;
-    $bg-color: #0d0d0d;
+    $bg-color: #050505;
     $header-link-color: white;
 }
 
@@ -18,8 +18,8 @@ $content-box-background-color: #FFF;
 $content-box-border-color: #E0E0E0;
 
 @if $color-scheme =="dark" {
-    $content-box-background-color: #151515;
-    $content-box-border-color: #373737;
+    $content-box-background-color: #0a0a0a;
+    $content-box-border-color: #252525;
 }
 
 $content-box-padding: 1em;
@@ -55,7 +55,7 @@ $header-link-inactive-opacity: 0.75;
 $header-link-active-opacity: 1; // includes hover
 
 @if $color-scheme =="dark" {
-    $header-background: linear-gradient(to bottom, #171717, #111111);
+    $header-background: linear-gradient(to bottom, #111, #0a0a0a);
 }
 
 @if $theme =="flat" {
