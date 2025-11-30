@@ -67,26 +67,32 @@
     display: none;
     flex: 0 0 auto;
 
-    @include responsive('tiny') {
-        //display: none;
-    }
-
-    @include responsive('small') {
-        //display: none;
-    }
-
     @include responsive('medium') {
-        //display: block;
         width: 180px;
     }
 
     @include responsive('large') {
-        //display: block;
         width: 250px;
     }
 
     &.active {
-        display: block;
+        //display: block;
+        // fucking ugly code
+        @include responsive('tiny') {
+            display: none;
+        }
+
+        @include responsive('small') {
+            display: none;
+        }
+
+        @include responsive('medium') {
+            display: block;
+        }
+
+        @include responsive('large') {
+            display: block;
+        }
     }
 }
 
