@@ -85,6 +85,10 @@
                             line-height: 2rem;
                         }
 
+                        q {
+                          font-style: italic;
+                        }
+
                         .jumbotron-get-started {
                             @include responsive('tiny') {
                                 display: none;
