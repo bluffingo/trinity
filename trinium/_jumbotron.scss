@@ -86,7 +86,8 @@
                         }
 
                         q {
-                          font-style: italic;
+                            font-style: italic;
+                            font-synthesis: none; // fix emojis/unicode symbols
                         }
 
                         .jumbotron-get-started {
