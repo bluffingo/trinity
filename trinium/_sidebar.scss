@@ -107,6 +107,17 @@
     &.with-jumbotron {
         margin-bottom: -149px;
     }
+
+    &.user-custom-profile {
+      // this is fucking ugly
+      margin-top: calc(-350px - 5rem);
+
+      background: $content-box-background-color;
+      border: 1px solid $content-box-border-color;
+      padding-top: $content-box-padding;
+
+      border-radius: 4px;
+    }
 }
 
 .hamburger,
