@@ -249,11 +249,11 @@
 
     @include responsive('medium') {
         display: block;
-        max-width: 320px;
+        max-width: 340px;
 
         #header-search-input {
-            max-width: 300px;
-            width: 300px; // Shitty Hack
+            max-width: 320px;
+            width: 320px; // Shitty Hack
         }
     }
 
