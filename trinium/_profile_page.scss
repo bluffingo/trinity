@@ -1,7 +1,6 @@
 @use 'sass:math';
 
 .container.has-profile-banner {
-
     &.user,
     &.read {
         @include responsive('tiny') {

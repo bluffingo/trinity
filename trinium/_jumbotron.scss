@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .jumbotron {
     &.page-banner {
         @if $color-scheme =="dark" {
@@ -73,21 +75,11 @@
                     height: 120px;
 
                     .jumbotron-welcome {
-                        @include responsive('tiny') {
-                            line-height: 1.75rem;
-                        }
-
-                        @include responsive('small') {
-                            line-height: 2rem;
-                        }
-
-                        @include responsive('medium') {
-                            line-height: 2rem;
-                        }
-
-                        q {
-                            font-style: italic;
-                            font-synthesis: none; // fix emojis/unicode symbols
+                        .jumbotron-slogan {
+                            q {
+                                font-style: italic;
+                                font-synthesis: none; // fix emojis/unicode symbols
+                            }
                         }
 
                         .jumbotron-get-started {
@@ -148,6 +140,16 @@
 
         .jumbotron-container {
             padding-top: $header-height;
+        }
+
+        &.sidebar-active {
+            @include responsive('medium') {
+                background-position-x: calc(50% + math.div($sidebar-width-medium, 2));
+            }
+
+            @include responsive('large') {
+                background-position-x: calc(50% + math.div($sidebar-width-large, 2));
+            }
         }
     }
 

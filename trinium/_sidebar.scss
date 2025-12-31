@@ -68,11 +68,11 @@
     flex: 0 0 auto;
 
     @include responsive('medium') {
-        width: 180px;
+        width: $sidebar-width-medium;
     }
 
     @include responsive('large') {
-        width: 250px;
+        width: $sidebar-width-large;
     }
 
     &.active {
