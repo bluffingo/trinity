@@ -34,7 +34,7 @@
 
         @if $theme =="default" {
             background-color: color.adjust($value, $lightness: 10%);
-            background-image: linear-gradient(color.adjust($value, $lightness: 3%),
+            background-image: linear-gradient(color.adjust($value, $lightness: 2.5%),
                     color.adjust(color.adjust($value, $lightness: -2%), $hue: 1deg));
             border: 1px solid $border-color;
         }
