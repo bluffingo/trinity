@@ -4,8 +4,7 @@
 }
 
 .img-version {
-    max-width: 350px;
-    width: 100%;
+    width: 350px;
 }
 
 .col-version {
@@ -18,5 +17,24 @@
     @include responsive('medium') {
         border-bottom: none;
         padding: 0;
+    }
+}
+
+.version-box {
+    @include responsive('tiny') {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    @include responsive('medium') {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    display: flex;
+    align-items: center;
+
+    .col-img {
+        flex-grow: 1;
     }
 }
