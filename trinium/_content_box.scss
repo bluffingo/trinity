@@ -61,6 +61,34 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
+    &.content-grid-uploads {
+        grid-auto-rows: minmax(auto, auto);
+
+        @include responsive('tiny') {
+            // fucking stupid
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @include responsive('small') {
+            // ditto
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @include responsive('medium') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include responsive('large') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .content-entry,
+        .content-entry:first-child {
+            border: none;
+            padding: 0.5em 0;
+        }
+    }
+
     &.content-grid-users {
         grid-auto-rows: minmax(auto, auto);
 
